@@ -1,0 +1,82 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Agregar Persona"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:39:p, par l {seq l {par l {par l:::p {comp label2:::::x, comp label3:::::x, comp label4::l:::x}, comp label5:::p::p}, space :p:28:p}, seq t {comp label6:::p:49:p, space :p:16:p}}, par l {par l:::p {comp textFieldIsapre::::115:x, comp textFieldRut::t::115:x, comp textFieldLastName::t::115:x, comp textFieldName::t::115:x}, comp textFieldAFP::l:p:113:p}, space ::50:x}}"
+					"$verticalGroup": "par l {seq l {space :::p, par b {comp label4::b:p::p, comp textFieldName::b:p::p}, space :p:7:p, par b {comp label2::b:p::p, comp textFieldLastName::b:p::p}, space :::p, par l {comp label3:::p:17:p, comp textFieldRut:::p::p}, space :::p, par b {comp textFieldIsapre::b:p::p, comp label5::b:p::p}, space :::p, par b {comp label6::b:p::p, comp textFieldAFP::b:p::p}, space ::28:x}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Apellido"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textFieldLastName"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "Rut"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textFieldRut"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "Nombre"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textFieldName"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textFieldIsapre"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "Isapre"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "AFP"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textFieldAFP"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": "OK"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "okButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 295, 255 )
+		} )
+	}
+}

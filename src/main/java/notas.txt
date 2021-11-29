@@ -1,0 +1,26 @@
+   private void trabajadorUWU(){
+        Trabajador trabajadorNuevo = new Trabajador();
+        if(notEmptyTextFields()){
+            trabajadorNuevo = new Trabajador(textFieldName.getText(),textFieldLastName.getText(),textFieldRut.getText(),textFieldIsapre.getText(),textFieldAFP.getText());
+        }
+        ServicioTrabajador service= new ServicioTrabajador(RUTA_GUARDADO);
+        if (service.verificarSiTrabajadorExiste(trabajadorNuevo)){
+            vaciarCampos();
+        }else{
+            JOptionPane.showMessageDialog(null,"pico");
+        }
+
+    }
+
+    private void vaciarCampos(){
+        textFieldLastName.setText("");
+        textFieldName.setText("");
+        textFieldRut.setText("");
+        textFieldIsapre.setText("");
+        textFieldAFP.setText("");
+    }
+
+
+    private boolean notEmptyTextFields(){
+        return !textFieldName.getText().equals("")&&!textFieldLastName.getText().equals("")&&!textFieldRut.getText().equals("")&&!textFieldIsapre.getText().equals("")&&!textFieldAFP.getText().equals("");
+    }
